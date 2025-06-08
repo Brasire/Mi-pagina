@@ -1,0 +1,128 @@
+/* Reset y fondo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    background: #000;
+}
+
+canvas#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Contenedor principal */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 10vh auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ff41;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+    color: #00ff41;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 0 5px #00ff41);
+}
+
+.logo h1 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+/* Pestañas */
+.tabs {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #00ff41;
+}
+
+.tab {
+    flex: 1;
+    padding: 0.8rem;
+    background: none;
+    border: none;
+    color: #00ff41;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab.active {
+    background: rgba(0, 255, 65, 0.1);
+    border-bottom: 2px solid #00ff41;
+}
+
+/* Formularios */
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    font-family: 'Courier New', monospace;
+}
+
+.form input::placeholder {
+    color: #008f29;
+}
+
+.form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #00ff41;
+    border: none;
+    color: #000;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.form button:hover {
+    background: #00cc33;
+    box-shadow: 0 0 10px #00ff41;
+}
+
+/* Enlaces */
+.forgot-password, .back-to-login {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    color: #00ff41;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover, .back-to-login:hover {
+    text-decoration: underline;
+}
